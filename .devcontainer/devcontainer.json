@@ -3,23 +3,21 @@
   "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
   
   "features": {
-    // Voeg hier alleen noodzakelijke tools toe voor het examen
+    
   },
-  "postCreateCommand": "bash .devcontainer/setup-proxy.sh",
+
+  "postCreateCommand": "mkdir -p ~/.vscode-remote/extensions && cp -r .devcontainer/lint ~/.vscode-remote/extensions/pixellint",
   
   "customizations": {
     "vscode": {
       "extensions": [
-        // VERWIJDER Copilot extensies expliciet
+  
         "-github.copilot",
         "-github.copilot-chat",
         
-        // VERWIJDER andere AI-assistentie tools
         "-tabnine.tabnine-vscode",
         "-visualstudioexptteam.vscodeintellicode",
-        "-amazonwebservices.aws-toolkit-vscode",
-        "./lint"
-        
+        "-amazonwebservices.aws-toolkit-vscode"
       ],
       
       "settings": {

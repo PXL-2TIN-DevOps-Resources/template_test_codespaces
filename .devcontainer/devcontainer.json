@@ -18,10 +18,11 @@
         "-tabnine.tabnine-vscode",
         "-visualstudioexptteam.vscodeintellicode",
         "-amazonwebservices.aws-toolkit-vscode"
+        
       ],
       
       "settings": {
-        // Zie VS Code configuratie hieronder
+        "workbench.extensions.enabled": false
       }
     }
   },

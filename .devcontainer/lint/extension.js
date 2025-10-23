@@ -8,7 +8,7 @@ let lastSidePanelLogTime = 0;
 async function activate(context) {
 	const channel = vscode.window.createOutputChannel('pixellint');
 	channel.appendLine('pixellint is active');
-	channel.show();
+	//channel.show();
 
 	await disableInlineSuggestions(channel);
 
@@ -46,7 +46,7 @@ async function checkForAIViews(channel) {
 			await vscode.commands.executeCommand(cmd);
 			// Only log every 5 seconds to avoid spam
 			if (now - lastLogTime > 5000) {
-				channel.appendLine(`[${new Date().toISOString()}] Executed: ${cmd}`);
+				//channel.appendLine(`[${new Date().toISOString()}] Executed: ${cmd}`);
 				lastLogTime = now;
 			}
 		} catch (e) {

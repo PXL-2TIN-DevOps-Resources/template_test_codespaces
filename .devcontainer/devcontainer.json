@@ -5,6 +5,7 @@
   "features": {
     // Voeg hier alleen noodzakelijke tools toe voor het examen
   },
+  "postCreateCommand": "bash .devcontainer/setup-proxy.sh",
   
   "customizations": {
     "vscode": {
@@ -26,5 +27,11 @@
   },
   
   // Blokkeer port forwarding om externe communicatie te verhinderen
-  "forwardPorts": []
+  "forwardPorts": [],
+  "containerEnv": {
+    "HTTP_PROXY": "http://localhost:8888",
+    "HTTPS_PROXY": "http://localhost:8888",
+    "http_proxy": "http://localhost:8888",
+    "https_proxy": "http://localhost:8888"
+  }
 }

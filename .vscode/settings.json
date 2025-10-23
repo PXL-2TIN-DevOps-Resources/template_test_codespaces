@@ -1,0 +1,11 @@
+{
+  // disable Copilot extension behavior
+  "github.copilot.enable": false,
+  "github.copilot.inlineSuggest.enable": false,
+  "github.copilot.editor.enableAutoCompletions": false,
+
+  // hide/disable the new Chat/Agent features
+  "chat.disableAIFeatures": true,
+  "chat.agent.enabled": false,
+  "chat.agent.maxRequests": 0
+}

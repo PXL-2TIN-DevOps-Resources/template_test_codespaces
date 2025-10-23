@@ -16,7 +16,7 @@
         // VERWIJDER andere AI-assistentie tools
         "-tabnine.tabnine-vscode",
         "-visualstudioexptteam.vscodeintellicode",
-        "-amazonwebservices.aws-toolkit-vscode",
+        "-amazonwebservices.aws-toolkit-vscode"
       ],
       
       "settings": {

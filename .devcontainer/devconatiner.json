@@ -16,7 +16,7 @@
         "-tabnine.tabnine-vscode",
         "-visualstudioexptteam.vscodeintellicode",
         "-amazonwebservices.aws-toolkit-vscode",
-        "./.devcontainer/pixel-lint-0.0.1.vsix"
+        "/workspaces/template_test_codespaces/.devcontainer/pixel-lint-0.0.1.vsix"
       ],
       
       "settings": {

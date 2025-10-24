@@ -6,7 +6,7 @@
   "github.copilot.editor.enableCodeActions": false,
   
 
-  "chat.disableAIFeatures": true,
+  "chat.disableAIFeatures": false,
   "chat.agent.enabled": false,
   "chat.agent.maxRequests": 0,
 

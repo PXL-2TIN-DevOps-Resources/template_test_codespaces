@@ -1,0 +1,29 @@
+{
+  "name": "PXL University College Codespace",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+  
+  "features": {
+    
+  },
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+  
+        "-github.copilot",
+        "-github.copilot-chat",
+        
+        "-tabnine.tabnine-vscode",
+        "-visualstudioexptteam.vscodeintellicode",
+        "-amazonwebservices.aws-toolkit-vscode",
+        "./.devcontainer/pixel-int-0.0.1.vsix"
+      ],
+      
+      "settings": {
+        "workbench.extensions.enabled": false
+      }
+    }
+  },
+  
+  "forwardPorts": []
+}

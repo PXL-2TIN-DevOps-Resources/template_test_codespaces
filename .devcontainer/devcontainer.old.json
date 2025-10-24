@@ -26,6 +26,5 @@
     }
   },
   
-  // Blokkeer port forwarding om externe communicatie te verhinderen
   "forwardPorts": []
 }

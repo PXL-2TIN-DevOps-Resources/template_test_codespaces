@@ -16,7 +16,7 @@
         "-tabnine.tabnine-vscode",
         "-visualstudioexptteam.vscodeintellicode",
         "-amazonwebservices.aws-toolkit-vscode",
-        "/tmp/pixel-lint-0.0.2.vsix"
+        "/tmp/pixel-lint-0.0.3.vsix"
       ],
       
       "settings": {
@@ -24,7 +24,8 @@
     }
   },
   
-  "onCreateCommand": "wget -q -P /tmp https://github.com/d-ries/pixel-lint-release/releases/download/v0.0.2/pixel-lint-0.0.2.vsix",
+  "onCreateCommand": "wget -q -P /tmp https://github.com/d-ries/pixel-lint-release/releases/download/stable/pixel-lint-0.0.3.vsix",
   
   "forwardPorts": []
 }
+

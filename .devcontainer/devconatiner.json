@@ -6,6 +6,8 @@
     
   },
   
+  "postCreateCommand": "code --install-extension /workspaces/template_test_codespaces/.devcontainer/pixel-lint-0.0.1.vsix",
+  
   "customizations": {
     "vscode": {
       "extensions": [

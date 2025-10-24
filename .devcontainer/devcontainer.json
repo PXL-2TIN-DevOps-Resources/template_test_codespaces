@@ -6,8 +6,6 @@
     
   },
   
-  "postCreateCommand": "code --install-extension /workspaces/template_test_codespaces/.devcontainer/pixel-lint-0.0.1.vsix",
-  
   "customizations": {
     "vscode": {
       "extensions": [
@@ -17,8 +15,7 @@
         
         "-tabnine.tabnine-vscode",
         "-visualstudioexptteam.vscodeintellicode",
-        "-amazonwebservices.aws-toolkit-vscode",
-        "/workspaces/template_test_codespaces/.devcontainer/pixel-lint-0.0.1.vsix"
+        "-amazonwebservices.aws-toolkit-vscode"
       ],
       
       "settings": {
@@ -26,6 +23,8 @@
       }
     }
   },
+  
+  "postCreateCommand": "wget -P /tmp https://github.com/d-ries/pixel-lint-release/releases/download/v0.0.1/pixel-lint-0.0.1.vsix && code --install-extension /tmp/pixel-lint-0.0.1.vsix",
   
   "forwardPorts": []
 }

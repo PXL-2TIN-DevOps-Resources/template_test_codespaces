@@ -25,7 +25,9 @@
   },
   
   "onCreateCommand": "wget -q -P /tmp https://github.com/d-ries/pixel-lint-release/releases/download/stable/pixel-lint-0.0.3.vsix",
+  "postStartCommand": "bash /workspaces/*/.devcontainer/setup-log-links.sh",
   
   "forwardPorts": []
 }
+
 

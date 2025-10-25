@@ -20,11 +20,11 @@ if [ -n "$remoteagent_log" ]; then
     git add "$REPO_LOGS_DIR/remoteagent.log"
 fi
 
-copilot_log=$(find "$HOME/.vscode-remote/data/logs" -type f -name "GitHub Copilot.log" 2>/dev/null | head -n1)
+copilot_log=$(find "$HOME/.vscode-remote/data/logs" -type f -name "GitHub Copilot Chat.log" 2>/dev/null | head -n1)
 
 if [ -n "$copilot_log" ]; then
-    cp "$copilot_log" "$REPO_LOGS_DIR/GitHub Copilot.log"
-    git add "$REPO_LOGS_DIR/GitHub Copilot.log"
+    cp "$copilot_log" "$REPO_LOGS_DIR/GitHub Copilot Chat.log"
+    git add "$REPO_LOGS_DIR/GitHub Copilot Chat.log"
 fi
 EOF
 chmod +x "$HOOKS_DIR/pre-commit"
